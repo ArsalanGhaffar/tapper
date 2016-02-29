@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tapper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hji-QQ-h1u"/>
+                        <viewControllerLayoutGuide type="bottom" id="6u6-Uv-bfj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="265" translatesAutoresizingMaskIntoConstraints="NO" id="Irg-2w-tuE" userLabel="background view">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Tapper" translatesAutoresizingMaskIntoConstraints="NO" id="xzP-dV-wOh" userLabel="Tapper icon">
+                                <rect key="frame" x="8" y="12" width="347" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="347" id="QOa-dT-Etr"/>
+                                    <constraint firstAttribute="height" constant="140" id="fB4-F1-wc9"/>
+                                    <constraint firstAttribute="width" constant="347" id="leR-07-z8o"/>
+                                    <constraint firstAttribute="height" constant="140" id="z7m-Uv-Gn1"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QOa-dT-Etr"/>
+                                        <exclude reference="leR-07-z8o"/>
+                                        <exclude reference="z7m-Uv-Gn1"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKu-7b-ErN" userLabel="play button">
+                                <rect key="frame" x="80" y="384" width="185" height="191"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="0xQ-sG-VQG"/>
+                                    <constraint firstAttribute="height" constant="191" id="MVK-NW-7yB"/>
+                                    <constraint firstAttribute="width" constant="200" id="RbK-nJ-muD"/>
+                                    <constraint firstAttribute="height" constant="150" id="b2q-Ir-3VM"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="1617"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0xQ-sG-VQG"/>
+                                        <exclude reference="b2q-Ir-3VM"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How Many Taps ?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kBU-2X-wDo" userLabel="taps text field">
+                                <rect key="frame" x="80" y="346" width="185" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Ovt-Sb-gws"/>
+                                    <constraint firstAttribute="height" constant="30" id="tfL-Lx-gaC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1000 Taps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dT-9f-91O" userLabel="1000 Taps Label">
+                                <rect key="frame" x="55" y="295" width="235" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="DgA-h5-fR9"/>
+                                    <constraint firstAttribute="width" constant="235" id="WcH-OW-w6J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="11-01-150ppp" translatesAutoresizingMaskIntoConstraints="NO" id="I7p-tU-6mt" userLabel="coin">
+                                <rect key="frame" x="72" y="106" width="218" height="126"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="218" id="Al1-uu-4Bv"/>
+                                    <constraint firstAttribute="height" constant="126" id="TbT-fA-jAB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xzP-dV-wOh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4RB-Y1-8hr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pKu-7b-ErN" secondAttribute="trailing" constant="90" id="7cQ-d4-13F"/>
+                            <constraint firstItem="pKu-7b-ErN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9c4-Ky-9K1"/>
+                            <constraint firstItem="8dT-9f-91O" firstAttribute="top" secondItem="I7p-tU-6mt" secondAttribute="bottom" constant="63" id="Ew9-xt-Yez"/>
+                            <constraint firstItem="kBU-2X-wDo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HAP-qg-Vyf"/>
+                            <constraint firstItem="6u6-Uv-bfj" firstAttribute="top" secondItem="Irg-2w-tuE" secondAttribute="bottom" id="IYf-Vr-CEr"/>
+                            <constraint firstItem="xzP-dV-wOh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="KMi-Th-gy4"/>
+                            <constraint firstItem="pKu-7b-ErN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="55" id="KiU-hL-EYy"/>
+                            <constraint firstItem="I7p-tU-6mt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LFH-FG-luo"/>
+                            <constraint firstItem="pKu-7b-ErN" firstAttribute="top" secondItem="kBU-2X-wDo" secondAttribute="bottom" constant="8" id="O0O-1v-vTy"/>
+                            <constraint firstItem="Irg-2w-tuE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-29" id="OPE-36-VBZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Irg-2w-tuE" secondAttribute="trailing" constant="-20" id="QcJ-dG-33f"/>
+                            <constraint firstItem="Irg-2w-tuE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="TQo-O5-2KU"/>
+                            <constraint firstItem="xzP-dV-wOh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="12" id="Ulh-Dh-P9U"/>
+                            <constraint firstItem="6u6-Uv-bfj" firstAttribute="top" secondItem="pKu-7b-ErN" secondAttribute="bottom" constant="92" id="a9H-zJ-7sg"/>
+                            <constraint firstItem="8dT-9f-91O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hPj-JS-172"/>
+                            <constraint firstItem="pKu-7b-ErN" firstAttribute="top" secondItem="xzP-dV-wOh" secondAttribute="bottom" constant="130" id="jKP-wH-T5H"/>
+                            <constraint firstItem="xzP-dV-wOh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="lYE-V4-jVy"/>
+                            <constraint firstItem="xzP-dV-wOh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-10" id="muD-4V-CbY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pKu-7b-ErN" secondAttribute="trailing" constant="40" id="ogK-nH-jVT"/>
+                            <constraint firstItem="6u6-Uv-bfj" firstAttribute="top" secondItem="pKu-7b-ErN" secondAttribute="bottom" constant="100" id="pc7-1v-R4U"/>
+                            <constraint firstItem="I7p-tU-6mt" firstAttribute="top" secondItem="Hji-QQ-h1u" secondAttribute="bottom" constant="86" id="pqq-BK-gL9"/>
+                            <constraint firstItem="xzP-dV-wOh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-12" id="quD-FD-fhe"/>
+                            <constraint firstItem="pKu-7b-ErN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="qxD-xi-T0o"/>
+                            <constraint firstItem="kBU-2X-wDo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="55" id="snI-29-Zwz"/>
+                            <constraint firstItem="pKu-7b-ErN" firstAttribute="top" secondItem="xzP-dV-wOh" secondAttribute="bottom" constant="232" id="wds-sE-6V8"/>
+                            <constraint firstItem="xzP-dV-wOh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="33" id="yg6-07-wj6"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="lYE-V4-jVy"/>
+                                <exclude reference="muD-4V-CbY"/>
+                                <exclude reference="yg6-07-wj6"/>
+                                <exclude reference="jKP-wH-T5H"/>
+                                <exclude reference="ogK-nH-jVT"/>
+                                <exclude reference="qxD-xi-T0o"/>
+                                <exclude reference="wds-sE-6V8"/>
+                                <exclude reference="a9H-zJ-7sg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="428.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="11-01-150ppp" width="1667" height="1667"/>
+        <image name="1617" width="1200" height="1200"/>
+        <image name="265" width="1200" height="1200"/>
+        <image name="Tapper" width="458" height="91"/>
+    </resources>
+</document>
